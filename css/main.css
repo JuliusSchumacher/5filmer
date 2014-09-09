@@ -8,7 +8,6 @@ body {
     text-align: center;
     width: 40%;
     margin: auto;
-    margin-top: -70px;
 }
 
 h1 {
@@ -23,24 +22,35 @@ h1 {
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    font-size: 50px;
+    font-size: 30px;
     color: #aaaaaa;
+    display: inline;
 }
 
-.cover img{
+.cover img {
     height: 200px;
+    transition: height 0.3s ease;
+    margin: 0 10px;
+    
+}
+
+.cover img:hover {
+    height: 210px;
+    box-shadow: 0px 5px 3px 0px;
 }
 
 .cover {
     display: inline-block;
     margin: auto;
+    position: relative;
+    align-self: center;
 }
 
 #covers {
     height: 300px;
-    width: 690px;
     margin: auto;
     margin-top: 100px;
+    width: 90%;
 }
 
 #foot {
@@ -50,7 +60,6 @@ h2 {
     border-top: 1px solid #dddddd;
     color: #dddddd;
     text-align: center;
-    margin-top: 100px;
 }
 
 a {
@@ -61,16 +70,22 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #aaaaaa;
+}
+
 #nav {
     height: 60px;
     float: right;
-    width: 35%;
+    width: 50%;
     margin-top: 20px;
-    text-align: right
+    text-align: right;
+    margin-top: -50px;
 }
 
 .nav {
-    display: inline-block;
+    position: relative;
+    display: inline-block
 }
 
 .nav a {
@@ -79,10 +94,15 @@ a {
     display: inline;
 }
 
+.nav a:hover {
+    box-shadow: 0 2px 2px 0px;
+}
+
 .content {
     width: 50%;
     margin: auto;
     align-content: center;
+    margin-bottom: 100px;
 }
 
 .poster img {
@@ -105,3 +125,5 @@ iframe {
     font-weight: 100;
     font-size: 30px;
     color: #666666;
+}
+ 
