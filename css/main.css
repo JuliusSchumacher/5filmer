@@ -36,7 +36,7 @@ h2 {
 
 .cover img:hover {
     height: 210px;
-    box-shadow: 0px 5px 3px 0px;
+    box-shadow: -1px 2px 5px 2px #666;
 }
 
 .cover {
@@ -118,6 +118,7 @@ a:hover {
 
 iframe {
     margin-left: 9%;
+    margin-top: 50px;
 }
 
 .synopsis {
@@ -126,4 +127,17 @@ iframe {
     font-size: 30px;
     color: #666666;
 }
- 
+
+a.readmore {
+    padding: 5px 10px;
+    float: right;
+    color: #aaa;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: -30px;
+    border: 1px solid #ddd;
+}
+
+a.readmore:hover {
+    box-shadow: 0 2px 2px 0;
+}
